@@ -6,8 +6,8 @@ from PyPDF2 import PdfFileWriter, PdfFileReader
 
 root = tkinter.Tk()
 root.withdraw()
-filez = filedialog.askopenfilenames(parent=root,title='PDFs zum zusammenfügen auswählen',filetypes =(("PDFs", "*.pdf"),("All Files","*.*")))
-sf = filedialog.asksaveasfilename(parent=root,title='Speichern als',defaultextension=".pdf")
+filez = filedialog.askopenfilenames(parent=root,title='PDFs zum zusammenfügen auswählen',filetypes =(("PDFs", "*.pdf"),("Alle Dateien","*.*")))
+sf = filedialog.asksaveasfilename(parent=root,title='Speichern als',defaultextension=".pdf",filetypes =(("PDFs", "*.pdf"),("Alle Dateien","*.*")))
 output = PdfFileWriter()
 output_page_number = 0
 alignment = 2           # to align on even pages
